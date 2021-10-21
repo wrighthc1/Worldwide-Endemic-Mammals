@@ -98,14 +98,8 @@
       }).on({
               mouseover: function(e){
                 this.setStyle({color: 'green',fillColor: 'green'});
-
-                var toolTipInfo = "Name: " + feature.properties.name + "<br>" +
-                                "Number of Species: " + feature.properties.endemicmammals.toLocaleString()
-
-
-                            this.bindTooltip(toolTipInfo, { sticky: true });
                                     },
-                                    
+
               mouseout: function(e){
                 this.setStyle({color:'#910327', fillColor: '#910327'});
                 } })},});
